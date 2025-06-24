@@ -12,7 +12,7 @@ function News() {
       </section>
       {/* 1 */}
 
-      <section className="grid md:grid-cols-2 grid-cols-1 gap-x-7 mt-6 ">
+      <section className="grid lg:grid-cols-2 grid-cols-1 gap-x-7 mt-6 ">
 
         <section className="px-2 bg-[rgba(255, 255, 255, 1)] shadow-xl rounded">
 
@@ -34,7 +34,7 @@ function News() {
               <h2 className="text-2xl font-semibold text-black">
                 Running remote offsites and onbordings
               </h2>
-              <p className="text-stone-800 w-[400px]">
+              <p className="text-stone-800 md:w-[400px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Placerat fermentum, enim vel adipiscing non. Lacus, nunc, at et
                 vel tellus dignissim quis.
@@ -67,7 +67,7 @@ function News() {
               <h2 className="text-2xl font-semibold text-black">
                 Running remote offsites and onbordings
               </h2>
-              <p className="text-stone-800 w-[400px]">
+              <p className="text-stone-800 md:w-[400px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Placerat fermentum, enim vel adipiscing non. Lacus, nunc, at et
                 vel tellus dignissim quis.

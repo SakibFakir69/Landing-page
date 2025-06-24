@@ -8,6 +8,8 @@ import Features2 from '../components/landing/Features2'
 import Pricing from '../components/landing/pricing'
 import Testimonial from '../components/Testimonial'
 import News from '../components/landing/News'
+import Footer from '../components/Footer'
+import Newsletter from '../components/landing/Newsletter'
 
 function Homelayouts() {
   return (
@@ -18,6 +20,9 @@ function Homelayouts() {
         <Pricing/>
         <Testimonial/>
         <News/>
+        <Newsletter/>
+        
+        <Footer/>
         
 
 
