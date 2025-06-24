@@ -12,3 +12,7 @@
 .card-color{
     background-color: RGB (99, 38, 187);
 }
+
+.pay-card-color{
+    background: rgba(255, 255, 255, 1);
+}
