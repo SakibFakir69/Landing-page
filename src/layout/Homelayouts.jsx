@@ -7,6 +7,7 @@ import Features from '../components/landing/Features'
 import Features2 from '../components/landing/Features2'
 import Pricing from '../components/landing/pricing'
 import Testimonial from '../components/Testimonial'
+import News from '../components/landing/News'
 
 function Homelayouts() {
   return (
@@ -16,6 +17,7 @@ function Homelayouts() {
         <Features2/>
         <Pricing/>
         <Testimonial/>
+        <News/>
         
 
 
