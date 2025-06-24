@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+
+.bg-hero{
+    background-color: RGB( 85, 27, 169);
+
+}
+.bg-button{
+    background-color: RGB (66, 180, 238);
+
+}

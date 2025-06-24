@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Homelayouts from './layout/Homelayouts'
+import Navbar from './layout/Navbar'
 
 
 
@@ -8,7 +10,9 @@ function App() {
 
   return (
     <div>
-    <h1 className='text-2xl '>Staasdrt</h1>
+      <Navbar/>
+      <Homelayouts/>
+
      
     </div>
   )
