@@ -9,7 +9,7 @@ function Hero() {
   };
 
   return (
-    <div className="bg-hero flex w-full  border-2 md:flex-row flex-col p-14">
+    <div className="bg-hero flex w-full  md:flex-row flex-col p-14">
       {/* text */}
 
       <section className="flex-1  flex flex-col gap-y-8 px-10 mt-12">
@@ -29,7 +29,7 @@ function Hero() {
           </button>
         </div>
       </section>
-      {/*  */}
+      {/* photo */}
 
       <section className="flex-1 ">
         <div className=" p-6 ">

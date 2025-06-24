@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "daisyui";
 
 .bg-hero{
     background-color: RGB( 85, 27, 169);
