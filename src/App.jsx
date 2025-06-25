@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Homelayouts from './layout/Homelayouts'
 import Navbar from './layout/Navbar'
 import Footer from './components/Footer'
+import { Outlet } from 'react-router-dom'
 
 
 
@@ -16,7 +17,7 @@ function App() {
      </nav>
 
     <main>
-        <Homelayouts/>
+       <Outlet/>
     </main>
      
      <footer>

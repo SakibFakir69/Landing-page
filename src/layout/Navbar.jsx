@@ -1,19 +1,36 @@
 import React from "react";
-import { Links, NavLink } from "react-router-dom";
+import { Links, NavLink, useLocation } from "react-router-dom";
 
 function Navbar() {
-  const links = (
-    <>
-      <div className="flex flex-col gap-y-2">
-        <NavLink>Home</NavLink>
-        <NavLink>Services</NavLink>
-        <NavLink>Pricing</NavLink>
-        <NavLink>Testimonials</NavLink>
-        <NavLink>Blog</NavLink>
-        <button className="bg-[RGB 70 181 238]">FREE TRIAL</button>
-      </div>
-    </>
-  );
+
+  const path = useLocation().pathname;
+
+
+  const links = 
+
+    [
+      {
+        id:1, name:'home', path:'/',
+
+      },
+      {
+        id:2, name:'blog' , path:'/blog',
+
+      },
+      {
+        id:3, name:'contact', path:'/contact'
+      },
+      {
+        id:4, name:'Services' , path:'/services'
+      }
+    ]
+
+    console.log(path);
+
+
+    
+   
+  
 
   return (
     <div>
@@ -45,17 +62,40 @@ function Navbar() {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              {links}
+              {/* {links} */}
+
+
+              {
+                links.map((items,key)=>(
+                  <nav key={key}>
+
+                    <NavLink to={items.path} className={`${items.path===path ? "text-white border-b border-blue-500" : "text-white"}`}>
+
+                      {items.name}
+                    </NavLink>
+
+                  </nav>
+                ))
+              }
+
+
             </ul>
           </div>
         </div>
 
         <div className="navbar-end flex ol gap-x-3 mr-10 md:visible invisible">
-          <NavLink>Home</NavLink>
-          <NavLink>Services</NavLink>
-          <NavLink>Pricing</NavLink>
-          <NavLink>Testimonials</NavLink>
-          <NavLink>Blog</NavLink>
+              {
+                links.map((items,key)=>(
+                  <nav key={key}>
+
+                    <NavLink to={items.path} className={`${items.path===path ? "text-white border-b border-blue-500" : "text-white"}`}>
+
+                      {items.name}
+                    </NavLink>
+
+                  </nav>
+                ))
+              }
           <button className="bg-[RGB 70 181 238]">FREE TRIAL</button>
         </div>
       </div>
