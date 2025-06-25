@@ -13,7 +13,7 @@ import Newsletter from '../components/landing/Newsletter'
 
 function Homelayouts() {
   return (
-    <div className=''>
+    <div className='py-10'>
         <Hero/>
         <Features/>
         <Features2/>

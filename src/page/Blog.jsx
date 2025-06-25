@@ -42,7 +42,7 @@ function Blog() {
   return (
     <div className='p-10 bg-white'>
 
-        <section className='grid md:grid-cols-2 grid-cols-1 justify-center items-center gap-5'>
+        <section className='grid md:grid-cols-2 grid-cols-1 justify-center items-center gap-5 py-10'>
 
             {
                 blog.map((item, key)=>(
