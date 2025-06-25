@@ -4,7 +4,7 @@ import Lottie from "lottie-react";
 
 function Features() {
   return (
-    <div className="md:flex bg-white p-14 gap-9 ">
+    <div className="lg:flex bg-white p-14 gap-9 ">
       {/* photo */}
 
       <section className="">
@@ -14,8 +14,8 @@ function Features() {
 
       <section className="flex flex-col gap-y-6 py-10">
 
-        <h2 className="text-black text-5xl font-semibold">
-          It’s very helpful for operating system
+        <h2 className="text-black md:text-5xl text-3xl font-semibold">
+           Empowering Your Business with Smart Cloud Services
         </h2>
 
         <div>
@@ -30,9 +30,8 @@ function Features() {
             <h3 className="text-2xl text-black font-semibold">Ultra fast & Secure</h3>
           </div>
           <p className="text-slate-900 ml-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. vitae velit
-            proin justo, elementum sit. In morbi dolor sodales vestibulum cras.
-            Consequat.
+             Our platform ensures lightning-fast performance with enterprise-grade security protocols, keeping your data safe and your users happy.
+    
           </p>
         </div>
 
@@ -48,9 +47,8 @@ function Features() {
           </div>
 
           <p className="text-slate-900  ml-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. vitae velit
-            proin justo, elementum sit. In morbi dolor sodales vestibulum cras.
-            Consequat.
+              Tailor the system to match your business needs with our flexible and modular components—easily adapt layouts, workflows, and permissions.
+    
           </p>
         </div>
 
@@ -65,9 +63,8 @@ function Features() {
             <h3 className="text-2xl text-black font-semibold">Smart contract</h3>
           </div>
           <p className="text-slate-900 ml-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. vitae velit
-            proin justo, elementum sit. In morbi dolor sodales vestibulum cras.
-            Consequat.
+             Automate repetitive tasks and streamline your business processes using intelligent triggers and smart contract logic—boosting productivity.
+ 
           </p>
         </div>
       </section>

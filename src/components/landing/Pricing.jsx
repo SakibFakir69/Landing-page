@@ -4,7 +4,7 @@ function Pricing() {
   return (
     <div className="bg-white p-10">
       <div className="py-8">
-        <h1 className="font-semibold text-4xl text-center text-black">
+        <h1 className="font-semibold md:text-4xl text-2xl text-center text-black">
           Choose your best pricing plan
         </h1>
         <p className="text-black flex  gap-x-2 flex-row items-center font-semibold text-center justify-center">
@@ -42,7 +42,7 @@ function Pricing() {
             </div>
 
             <div>
-              <button className="bg-blue-200 text-blue-500 font-semibold py-2.5 p-2 px-8 mt-8">
+              <button className="bg-blue-200 text-black hover:text-white hover:bg-blue-800 font-semibold py-2.5 p-2 px-8 mt-8 cursor-pointer">
                 TRY THIS PACKAGE{" "}
               </button>
             </div>
@@ -71,7 +71,7 @@ function Pricing() {
             </div>
 
             <div>
-              <button className="bg-blue-800 text-white font-semibold py-2.5 p-2 px-8 mt-9">
+              <button className="bg-blue-800 hover:bg-blue-200 cursor-pointer text-white font-semibold py-2.5 p-2 px-8 mt-9">
                 TRY THIS PACKAGE{" "}
               </button>
             </div>
@@ -99,7 +99,7 @@ function Pricing() {
             </div>
 
             <div>
-              <button className="bg-blue-200 text-blue-500 font-semibold py-2.5 p-2 px-8 mt-9">
+              <button className="bg-blue-200 cursor-pointer hover:bg-blue-800 font-semibold py-2.5 p-2 px-8 mt-9 text-black hover:text-white">
                 TRY THIS PACKAGE{" "}
               </button>
             </div>

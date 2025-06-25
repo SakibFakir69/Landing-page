@@ -65,22 +65,21 @@ function Testimonial() {
   // use swiper js
 
   return (
-    <div className="bg-white p-10 w-full">
-      <section>
+    <div className="bg-white md:p-10 p-4 w-full">
+
+      <section className="w-full">
         <div className="flex justify-center items-center flex-col gap-y-6">
-          <h1 className="text-5xl font-semibold text-black ">Let’s see our User’s Review</h1>
-          <p className="text-black w-1/2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-            scelerisque tellus interdum venenatis auctor et nibh. Rhoncus a, sed
-            lobortis nisi.
+          <h1 className="md:text-5xl text-3xl font-semibold text-black ">Let’s see our User’s Review</h1>
+          <p className="text-black md:w-1/2 w-full">
+            Discover how Codext is helping businesses simplify operations, boost productivity, and deliver amazing experiences. Here’s what our users have to say.
           </p>
         </div>
       </section>
 
-      <section className="flex justify-center items-center  h-[300px] mt-4 w-full">
+      <section className="flex justify-center items-center  h-[300px] md:mt-4 mt-8 w-full">
 
         <Swiper
-        className="flex justify-center items-center"
+        className="flex justify-center items-center w-full"
           // install Swiper modules
           modules={[Autoplay]}
           spaceBetween={50}
@@ -88,6 +87,10 @@ function Testimonial() {
           centeredSlides={true}
        
           autoplay={{ disableOnInteraction: false, delay: 3000 }}
+          breakpoints={{
+            760:{slidesPerView:2},
+            640:{slidesPerView:1}
+          }}
        
       
           onSwiper={(swiper) => console.log(swiper)}
@@ -100,18 +103,18 @@ function Testimonial() {
               info.map((item,key)=>(
 
               <SwiperSlide>
-                  <div key={key} className="border-2 w-2/3 p-4  bg-[rgba(255, 255, 255, 1)] shadow-xl rounded border-none">
+                  <div key={key} className="border-2 md:w-2/3 p-4  bg-[rgba(255, 255, 255, 1)] shadow-xl rounded border-none">
 
-                  <i className="w-44 text-black "> <img src={t} className="-mt-2"/> {item.review}...  </i>
+                  <i className="md:w-44 w-full text-black "> <img src={t} className="-mt-2"/> {item.review}...  </i>
 
                   <div className="flex items-center gap-x-6 gap-y-4 mt-8">
 
                     <div>
-                      <img src={item.photo} alt={item.name}/>
+                      <img className="md:size-10" src={item.photo} alt={item.name}/>
                     </div>
 
                     <div className="">
-                      <p className="text-black text-xl font-medium">{item.name}</p>
+                      <p className="text-black md:text-xl font-medium">{item.name}</p>
                       <p className="text-black">{item.title}</p>
                     </div>
 

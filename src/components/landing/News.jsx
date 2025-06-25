@@ -19,7 +19,7 @@ function News() {
           <div className="p-2 px-4">
             <div className="">
               <img
-                className="h-[300px]"
+                className="md:h-[300px]"
                 src={"/Rectangle 32.png"}
                 alt="photo"
               />
@@ -35,12 +35,10 @@ function News() {
                 Running remote offsites and onbordings
               </h2>
               <p className="text-stone-800 md:w-[400px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Placerat fermentum, enim vel adipiscing non. Lacus, nunc, at et
-                vel tellus dignissim quis.
+                  Remote work culture is here to stay. Learn how we manage onboarding and collaboration while keeping teams connected and engaged from anywhere in the world..
               </p>
               <div>
-                <button className="bg-blue-500  hover:bg-blue-600 px-10 py-2.5 rounded">
+                <button className=" cursor-pointer bg-blue-500  hover:bg-blue-600 px-10 py-2.5 rounded">
                   Continue
                 </button>
               </div>
@@ -52,7 +50,7 @@ function News() {
           <div className="px-4 p-2">
             <div>
               <img
-                className="h-[300px]"
+                className="md:h-[300px]"
                 src={"/Rectangle 33.png"}
                 alt="photo"
               />
@@ -68,12 +66,10 @@ function News() {
                 Running remote offsites and onbordings
               </h2>
               <p className="text-stone-800 md:w-[400px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Placerat fermentum, enim vel adipiscing non. Lacus, nunc, at et
-                vel tellus dignissim quis.
+                    Learn how to manage effective offsite meetings and onboarding processes for remote teams. Improve team communication and collaboration with the right approach.
               </p>
               <div>
-                <button className="bg-blue-500 hover:bg-blue-600 px-10 py-2.5 rounded mb-4">
+                <button className=" cursor-pointer bg-blue-500 hover:bg-blue-600 px-10 py-2.5 rounded mb-4">
                   Continue
                 </button>
               </div>

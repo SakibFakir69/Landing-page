@@ -6,32 +6,32 @@ function Features2() {
       id: 1,
       photo: "https://img.icons8.com/3d-fluency/94/source-code.png",
       title: "Clean Code",
-      description: "Lorem ipsum dolor sit amet ecte adipiscing elitIpsum.",
+      description: "Our platform is built with clean, maintainable code ensuring reliability, scalability, and easy updates.",
     },
     {
       id: 2,
       photo: "https://img.icons8.com/nolan/64/web-analystics.png",
       title: "Data Analytic",
-      description: "Lorem ipsum dolor sit amet ecte adipiscing elitIpsum.",
+      description: "Gain deep insights with powerful analytics that help you track user behavior and business performance.",
     },
     {
       id: 3,
       photo: "https://img.icons8.com/color/48/security-checked--v1.png",
       title: "Fully Secured",
-      description: "Lorem ipsum dolor sit amet ecte adipiscing elitIpsum.",
+      description: "We prioritize your security with industry-standard encryption and compliance to protect your data.",
     },
     {
       id: 4,
       photo: "https://img.icons8.com/color/48/customer-support.png",
       title: "24/7 Support",
-      description: "Lorem ipsum dolor sit amet ecte adipiscing elitIpsum.",
+      description: "Our dedicated support team is available around the clock to assist you with any questions or issues.",
     },
   ];
 
   return (
     <div className="bg-white w-full p-10">
       <div className="w-full flex justify-center items-center">
-        <h1 className="text-5xl font-semibold text-black w-1/2">
+        <h1 className="md:text-5xl text-3xl font-semibold text-black md:w-1/2">
           We Provides best Feature for customar
         </h1>
       </div>
@@ -56,7 +56,7 @@ function Features2() {
               </div>
               <button
                 className="border border-blue-400 rounded-full  mt-4 mb-4 p-2 hover:bg-teal-300/10 
-            hover:border-blue-50/10 transition duration-300 delay-200"
+            hover:border-blue-50/10 transition duration-300 delay-200 cursor-pointer"
               >
                 <img
                   width="24"

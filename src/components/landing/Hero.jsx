@@ -9,33 +9,36 @@ function Hero() {
   };
 
   return (
-    <div className="bg-hero flex w-full  md:flex-row flex-col p-14">
+    <div className=" flex w-full justify-center items-center flex-col  p-14 bg-white">
       {/* text */}
 
-      <section className="flex-1  flex flex-col gap-y-8 px-10 mt-12">
-        <h2 className="text-5xl font-bold text-white">
+      
+        <h2 className="md:text-5xl text-3xl font-bold text-black">
           {" "}
           Codext one of the best system in{" "}
           <span className="text-blue-400">SAAS</span>.
         </h2>
-        <p className="text-stone-200 max-w-80">
+
+        <p className="text-stone-600 md:max-w-2/3 mt-8 ">
           Software as a Service (SaaS) has changed the application usage model
           for both business and individual sectors. Through cloud access users
           no longer need to manage installations or updates of their tools.
         </p>
         <div>
-          <button className="px-10 py-3 hover:bg-blue-400 text-white bg-blue-500 font-semibold rounded">
+         
+        </div>
+      
+    
+
+
+
+      <img src="/original-f02b3941d85e5361aba00aed39bc2ee7.webp" className="rounded border-2 p-3 mt-6 shadow-xl rounded"/>
+       <button className="px-10 cursor-pointer py-3 hover:bg-blue-400 text-white bg-blue-500 font-semibold rounded mt-4">
             Try A Live Demo
           </button>
-        </div>
-      </section>
-      {/* photo */}
 
-      <section className="flex-1 ">
-        <div className=" p-6 ">
-          <Lottie height={440}  animationData={heroImg} loop={true}></Lottie>
-        </div>
-      </section>
+
+      
     </div>
   );
 }
