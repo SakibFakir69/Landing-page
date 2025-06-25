@@ -21,8 +21,7 @@ function Homelayouts() {
         <Testimonial/>
         <News/>
         <Newsletter/>
-        
-        <Footer/>
+   
         
 
 

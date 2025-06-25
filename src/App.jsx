@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Homelayouts from './layout/Homelayouts'
 import Navbar from './layout/Navbar'
+import Footer from './components/Footer'
 
 
 
@@ -10,8 +11,17 @@ function App() {
 
   return (
     <div>
-      <Navbar/>
-      <Homelayouts/>
+     <nav>
+       <Navbar/>
+     </nav>
+
+    <main>
+        <Homelayouts/>
+    </main>
+     
+     <footer>
+       <Footer/>
+     </footer>
 
      
     </div>
