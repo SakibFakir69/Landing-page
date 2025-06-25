@@ -10,7 +10,7 @@ function Card({    description, title,id,img}) {
         <div className='flex flex-col items-center justify-center gap-y-6 shadow-xl rounded p-2 px-3'>
 
             <div className=''>
-                <img src={img}/>
+                <img src={img} className='rounded'/>
             </div>
             <div className='flex flex-col gap-y-4'>
                 <h1 className='md:text-4xl text-2xl font-semibold text-black'>{title}</h1>

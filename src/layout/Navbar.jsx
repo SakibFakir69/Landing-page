@@ -20,9 +20,7 @@ function Navbar() {
       {
         id:3, name:'contact', path:'/contact'
       },
-      {
-        id:4, name:'Services' , path:'/services'
-      }
+      
     ]
 
     console.log(path);
@@ -34,9 +32,10 @@ function Navbar() {
 
   return (
     <div>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar bg-base-100 shadow-sm h-[80px]">
         <div className="navbar-start">
           <div className="dropdown">
+
             <div
               tabIndex={0}
               role="button"
@@ -44,7 +43,7 @@ function Navbar() {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-6 w-6 md:hidden"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -58,18 +57,22 @@ function Navbar() {
                 />{" "}
               </svg>
             </div>
+
+            <img className="hidden md:block -mt-6" width="48" height="48" src="https://img.icons8.com/fluency/48/ai-generated-code.png" alt="ai-generated-code"/>
+
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              className="   menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow"
             >
               {/* {links} */}
 
 
+
               {
                 links.map((items,key)=>(
-                  <nav key={key}>
+                  <nav key={key} className="flex flex-col gap-4">
 
-                    <NavLink to={items.path} className={`${items.path===path ? "text-white border-b border-blue-500" : "text-white"}`}>
+                    <NavLink to={items.path} className={`${items.path===path ? "text-white border-b-2 mt-1 border-blue-500" : "text-white"}`}>
 
                       {items.name}
                     </NavLink>
@@ -77,6 +80,7 @@ function Navbar() {
                   </nav>
                 ))
               }
+                <button className="bg-blue-400 px-4 py-2 rounded">FREE TRIAL</button>
 
 
             </ul>
@@ -88,7 +92,7 @@ function Navbar() {
                 links.map((items,key)=>(
                   <nav key={key}>
 
-                    <NavLink to={items.path} className={`${items.path===path ? "text-white border-b border-blue-500" : "text-white"}`}>
+                    <NavLink to={items.path} className={`${items.path===path ? "text-white border-b-2 mt-1 border-blue-500" : "text-white"}`}>
 
                       {items.name}
                     </NavLink>
@@ -96,7 +100,7 @@ function Navbar() {
                   </nav>
                 ))
               }
-          <button className="bg-[RGB 70 181 238]">FREE TRIAL</button>
+          <button className="bg-blue-400 px-4 py-2 rounded">FREE TRIAL</button>
         </div>
       </div>
     </div>

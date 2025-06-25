@@ -17,5 +17,13 @@ export const route = createBrowserRouter([
         element: <Blog />,
       },
     ],
+
+ 
+    
   },
+   {
+    path:"*",
+    element:<h1 className="flex justify-center items-center text-3xl md:text-6xl font-semibold">404</h1>
+    
+  }
 ]);
