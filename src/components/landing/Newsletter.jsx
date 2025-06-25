@@ -1,6 +1,8 @@
 import React from "react";
 
 function Newsletter() {
+
+  // add logo news letter
   return (
     <div className="p-10 flex justify-center items-center mb-10 bg-white w-full  ">
       <section className="border w-full flex justify-center items-center flex-col bg-[rgba(255, 255, 255, 1)] shadow-xl h-[300px] rounded  gap-y-8">

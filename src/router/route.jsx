@@ -6,29 +6,29 @@ import Contacts from "../page/Contacts";
 
 export const route = createBrowserRouter([
   {
-    path: '',
-    element: <App/>,
+    path: "",
+    element: <App />,
     children: [
       {
-        path: '/',
+        path: "/",
         element: <Homelayouts />,
       },
       {
-        path: '/blog',
+        path: "/blog",
         element: <Blog />,
       },
       {
-        path:"/conatct",
-        element:<Contacts/>
-      }
+        path: "/contact",
+        element: <Contacts />,
+      },
     ],
-
- 
-    
   },
-   {
-    path:"*",
-    element:<h1 className="flex justify-center items-center text-3xl md:text-6xl font-semibold">404</h1>
-    
-  }
+  {
+    path: "*",
+    element: (
+      <h1 className="flex justify-center items-center text-3xl md:text-6xl font-semibold">
+        404
+      </h1>
+    ),
+  },
 ]);

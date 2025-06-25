@@ -71,7 +71,7 @@ function Pricing() {
             </div>
 
             <div>
-              <button className="bg-blue-800 hover:bg-blue-200 cursor-pointer text-white font-semibold py-2.5 p-2 px-8 mt-9">
+              <button className="bg-blue-800 hover:bg-blue-200 cursor-pointer text-white font-semibold py-2.5 p-2 px-8 mt-9 hover:text-black">
                 TRY THIS PACKAGE{" "}
               </button>
             </div>
